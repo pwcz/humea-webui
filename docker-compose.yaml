@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    ports:
+      - "8082:8080"
+    environment:
+      API_TELEGRAM: <telegram_api>
+      CHANNEL_ID: <channel_id>
+      DEVICE_ID: <device_id>
+      DEVICE_ADDRESS: <device_address>
+      DEVICE_LOCAL_KEY: <device_local_key>
